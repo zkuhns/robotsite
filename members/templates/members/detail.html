@@ -1,0 +1,11 @@
+<img src="{{ member.pk }}.jpg" style="width:320px;height:320px;">
+<h1>{{member.first_name}} {{member.last_name}}</h1>
+{% if public %}
+{% if member.email %}
+Email: {{ member.email }}
+<br>
+{% endif %}
+{% if member.phone %}
+Phone: {{ member.phone }}
+{% endif %}
+{% endif %}
